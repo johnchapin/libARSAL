@@ -674,7 +674,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ARSAL_BLEManager, ARSAL_BLEManager_Init);
         
         for (CBCharacteristic *characteristicItem in [notification characteristics])
         {
-            if ([characteristicItem.UUID.UUIDString isEqualToString:characteristic.UUID.UUIDString])
+            if ([characteristicItem.UUID isEqual:characteristic.UUID])
             {
                 foundNotification = notification;
                 break;
