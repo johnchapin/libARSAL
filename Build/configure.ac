@@ -146,7 +146,7 @@ fi
 AC_LANG_PUSH([Objective C])
 if test x$ac_cv_objc_compiler_gnu = xyes; then
     AC_CHECK_HEADERS([CoreBluetooth/CoreBluetooth.h],
-        [LDFLAGS="$LDFLAGS -framework CoreBluetooth"],
+        [LDFLAGS="$LDFLAGS -framework IOBluetooth"],
         AC_MSG_WARN(The CoreBluetooth headers are required to use bluetooth features ! )
     )
 fi
